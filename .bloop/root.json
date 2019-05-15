@@ -1,0 +1,174 @@
+{
+    "version" : "1.1.2",
+    "project" : {
+        "name" : "root",
+        "directory" : "/Users/richard_beddington/code/playground/edition-template-builder",
+        "sources" : [
+            "/Users/richard_beddington/code/playground/edition-template-builder/src/main/scala-2.12",
+            "/Users/richard_beddington/code/playground/edition-template-builder/src/main/scala",
+            "/Users/richard_beddington/code/playground/edition-template-builder/src/main/java",
+            "/Users/richard_beddington/code/playground/edition-template-builder/target/scala-2.12/src_managed/main"
+        ],
+        "dependencies" : [
+        ],
+        "classpath" : [
+            "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+            "/Users/richard_beddington/.ivy2/cache/com.github.nscala-time/nscala-time_2.12/jars/nscala-time_2.12-2.22.0.jar",
+            "/Users/richard_beddington/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.1.jar",
+            "/Users/richard_beddington/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-2.2.0.jar"
+        ],
+        "out" : "/Users/richard_beddington/code/playground/edition-template-builder/.bloop/root",
+        "classesDir" : "/Users/richard_beddington/code/playground/edition-template-builder/.bloop/root/scala-2.12/classes",
+        "resources" : [
+            "/Users/richard_beddington/code/playground/edition-template-builder/src/main/resources",
+            "/Users/richard_beddington/code/playground/edition-template-builder/target/scala-2.12/resource_managed/main"
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.12.8",
+            "options" : [
+                "-P:semanticdb:synthetics:on",
+                "-P:semanticdb:failures:warning",
+                "-P:semanticdb:sourceroot:/Users/richard_beddington/code/playground/edition-template-builder",
+                "-Yrangepos",
+                "-Xplugin-require:semanticdb",
+                "-Xplugin:/Users/richard_beddington/.ivy2/cache/org.scalameta/semanticdb-scalac_2.12.8/jars/semanticdb-scalac_2.12.8-4.1.9.jar"
+            ],
+            "jars" : [
+                "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.12.8.jar",
+                "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar",
+                "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.12.8.jar",
+                "/Users/richard_beddington/.ivy2/cache/org.scala-lang.modules/scala-xml_2.12/bundles/scala-xml_2.12-1.0.6.jar",
+                "/Users/richard_beddington/.ivy2/cache/jline/jline/jars/jline-2.14.6.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.12.8",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.nscala-time",
+                    "name" : "nscala-time_2.12",
+                    "version" : "2.22.0",
+                    "artifacts" : [
+                        {
+                            "name" : "nscala-time_2.12",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/com.github.nscala-time/nscala-time_2.12/jars/nscala-time_2.12-2.22.0.jar"
+                        },
+                        {
+                            "name" : "nscala-time_2.12",
+                            "classifier" : "sources",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/com.github.nscala-time/nscala-time_2.12/srcs/nscala-time_2.12-2.22.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "joda-time",
+                    "name" : "joda-time",
+                    "version" : "2.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "joda-time",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.10.1.jar"
+                        },
+                        {
+                            "name" : "joda-time",
+                            "classifier" : "sources",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.joda",
+                    "name" : "joda-convert",
+                    "version" : "2.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "joda-convert",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-2.2.0.jar"
+                        },
+                        {
+                            "name" : "joda-convert",
+                            "classifier" : "sources",
+                            "path" : "/Users/richard_beddington/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-2.2.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
